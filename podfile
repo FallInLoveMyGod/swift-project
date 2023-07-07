@@ -1,0 +1,26 @@
+platform :"ios", '12.0'
+target 'swift-project' do
+# 忽略引入库的所有警告（强迫症者的福音啊）
+inhibit_all_warnings!
+#swift 项目中通过 pod引入第三方必须加上 use_frameworks！
+use_frameworks!
+
+#Swift框架
+pod 'Alamofire', '~> 4.9.0'
+pod 'Kingfisher', '~> 4.10.1'
+pod 'SnapKit', '~> 4.2.0'
+
+#OC框架
+pod 'DZNEmptyDataSet','~> 1.8.1'
+pod 'IQKeyboardManager', '~> 6.2.0'
+pod 'MJRefresh', '~> 3.1.16'
+pod 'MBProgressHUD', '~> 1.1.0'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+    end
+  end
+end
