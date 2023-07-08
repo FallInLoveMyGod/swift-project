@@ -17,10 +17,8 @@ import UIKit
 let TYScreenWidth = UIScreen.main.bounds.size.width
 let TYScreenHeight = UIScreen.main.bounds.size.height
 let TYStatusBarHeight = UIApplication.shared.statusBarFrame.size.height
+let TYStatusBarHeightIOS13 = UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame.size.height
 let TYTopBarHeight = TYStatusBarHeight + 44.0
-/**
- 当前dev分支
- */
 
 let TY_IPhoneX_S = UIScreen.instancesRespond(to: #selector(getter: UIScreen.currentMode)) ? CGSize.init(width: 1125, height: 2436).equalTo(UIScreen.main.currentMode!.size) : false
 let TY_IPhoneXR = UIScreen.instancesRespond(to: #selector(getter: UIScreen.currentMode)) ? CGSize.init(width: 828, height: 1792).equalTo(UIScreen.main.currentMode!.size) : false

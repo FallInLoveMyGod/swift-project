@@ -32,3 +32,13 @@ func Font(_ fontSize: CGFloat, fontWeight: UIFont.Weight? = .regular) -> UIFont 
 
 let defaultFont = Font(14, fontWeight: .regular);
 
+/**
+ 日志打印 🌟 ✨
+ */
+#if DEBUG
+public func printx(items: Any..., filename: String = #file, function: String = #function, line: Int = #line) {
+    print("\n🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟\n File: \((filename as NSString).lastPathComponent)\n Line: \(line)\n Method: \(function)\n",items,"\n✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨")
+}
+#else
+public func printx(items: Any..., filename: String = #file, function: String = #function, line: Int = #line) { }
+#endif
