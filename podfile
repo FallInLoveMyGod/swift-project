@@ -9,6 +9,9 @@ use_frameworks!
 pod 'Alamofire', '~> 4.9.0'
 pod 'Kingfisher', '~> 4.10.1'
 pod 'SnapKit', '~> 4.2.0'
+pod 'Realm', '~> 10.41.0'
+pod 'RealmSwift'
+pod 'RxSwift', '~> 6.5.0'
 
 #OC框架
 pod 'DZNEmptyDataSet','~> 1.8.1'
@@ -16,6 +19,7 @@ pod 'IQKeyboardManager', '~> 6.2.0'
 pod 'MJRefresh', '~> 3.1.16'
 pod 'MBProgressHUD', '~> 1.1.0'
 end
+
 
 post_install do |installer|
   installer.pods_project.targets.each do |target|
