@@ -14,6 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window : UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        NSSetUncaughtExceptionHandler { excepition in
+            let stackArr = excepition.callStackSymbols;
+            let reason = excepition.reason;
+            let name = excepition.name;
+            print("****************************  Exception    ****************************");
+            print("  name: ---- \(name)");
+            print("  reason: ---- \(String(describing: reason))");
+            print("  stackArr: ---- \(stackArr)");
+        }
+        
         return true
     }
 

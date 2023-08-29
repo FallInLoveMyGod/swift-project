@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1BB92A2A89CDB200481B40 /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1BB9292A89CDB200481B40 /* BaseScrollView.swift */; };
+		1E1BB92C2A89CF8600481B40 /* TYTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1BB92B2A89CF8600481B40 /* TYTestController.swift */; };
+		1E1BB92E2A89F4F600481B40 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1BB92D2A89F4F600481B40 /* BaseTableView.swift */; };
+		1E1BB9302A89F57F00481B40 /* TYTableWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1BB92F2A89F57F00481B40 /* TYTableWebController.swift */; };
+		1E1BB9342A89F73400481B40 /* WebViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1BB9332A89F73400481B40 /* WebViewCell.m */; };
+		1E85D4CC2A5959BB00CB2035 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E85D4CB2A5959BB00CB2035 /* LabelView.swift */; };
 		1ECBBD3B2A57DC7F0021E8FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECBBD392A57DC7F0021E8FB /* Main.storyboard */; };
 		1ECBBD3D2A57DC820021E8FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ECBBD3C2A57DC820021E8FB /* Assets.xcassets */; };
 		1ECBBD402A57DC820021E8FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECBBD3E2A57DC820021E8FB /* LaunchScreen.storyboard */; };
@@ -51,6 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1BB9292A89CDB200481B40 /* BaseScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
+		1E1BB92B2A89CF8600481B40 /* TYTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTestController.swift; sourceTree = "<group>"; };
+		1E1BB92D2A89F4F600481B40 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		1E1BB92F2A89F57F00481B40 /* TYTableWebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TYTableWebController.swift; sourceTree = "<group>"; };
+		1E1BB9312A89F73300481B40 /* swift-project-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-project-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E1BB9322A89F73300481B40 /* WebViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewCell.h; sourceTree = "<group>"; };
+		1E1BB9332A89F73400481B40 /* WebViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewCell.m; sourceTree = "<group>"; };
+		1E1BB9352A8A009500481B40 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1E85D4CB2A5959BB00CB2035 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		1ECBBD302A57DC7F0021E8FB /* swift-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECBBD3A2A57DC7F0021E8FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ECBBD3C2A57DC820021E8FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,6 +124,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E1BB9262A89CD1500481B40 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				1E1BB9282A89CD8100481B40 /* Controller */,
+				1E1BB9272A89CD7900481B40 /* View */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		1E1BB9272A89CD7900481B40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E1BB9322A89F73300481B40 /* WebViewCell.h */,
+				1E1BB9332A89F73400481B40 /* WebViewCell.m */,
+				1E1BB9292A89CDB200481B40 /* BaseScrollView.swift */,
+				1E1BB92D2A89F4F600481B40 /* BaseTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E1BB9282A89CD8100481B40 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E1BB92B2A89CF8600481B40 /* TYTestController.swift */,
+				1E1BB92F2A89F57F00481B40 /* TYTableWebController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E85D4CA2A59599700CB2035 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				1E85D4CB2A5959BB00CB2035 /* LabelView.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
 		1ECBBD272A57DC7E0021E8FB = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +199,8 @@
 				1ECBBD3C2A57DC820021E8FB /* Assets.xcassets */,
 				1ECBBD3E2A57DC820021E8FB /* LaunchScreen.storyboard */,
 				1ECBBD412A57DC820021E8FB /* Info.plist */,
+				1E1BB9312A89F73300481B40 /* swift-project-Bridging-Header.h */,
+				1E1BB9352A8A009500481B40 /* PrefixHeader.pch */,
 			);
 			path = "swift-project";
 			sourceTree = "<group>";
@@ -206,6 +260,8 @@
 		1ECBBD6D2A57DEFA0021E8FB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1EF072082A5BDB63006C2EE8 /* Functions */,
+				1E85D4CA2A59599700CB2035 /* CommonView */,
 				1ECBBD6E2A57DEFA0021E8FB /* Categary */,
 			);
 			path = Common;
@@ -241,6 +297,7 @@
 		1ECBBD762A57DEFA0021E8FB /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				1E1BB9262A89CD1500481B40 /* Test */,
 				1ECBBD772A57DEFA0021E8FB /* Personal */,
 				1ECBBD792A57DEFA0021E8FB /* Home */,
 				1ECBBD7B2A57DEFA0021E8FB /* Shop */,
@@ -286,6 +343,13 @@
 			children = (
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		1EF072082A5BDB63006C2EE8 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Functions;
 			sourceTree = "<group>";
 		};
 		55DBEB391896458D599245B4 /* Frameworks */ = {
@@ -375,6 +439,7 @@
 				TargetAttributes = {
 					1ECBBD2F2A57DC7F0021E8FB = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					1ECBBD452A57DC820021E8FB = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -481,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ECBBD8C2A57DEFA0021E8FB /* TYShopController.swift in Sources */,
+				1E1BB92E2A89F4F600481B40 /* BaseTableView.swift in Sources */,
 				1ECBBD852A57DEFA0021E8FB /* HexString.swift in Sources */,
 				1ECBBD7F2A57DEFA0021E8FB /* TYAppConfig.swift in Sources */,
 				1ECBBD862A57DEFA0021E8FB /* BaseViewController.swift in Sources */,
@@ -491,11 +557,16 @@
 				1ECBBD872A57DEFA0021E8FB /* BaseTableController.swift in Sources */,
 				1ECBBD8A2A57DEFA0021E8FB /* TYPersonalController.swift in Sources */,
 				1ECBBD892A57DEFA0021E8FB /* BaseNavigationController.swift in Sources */,
+				1E85D4CC2A5959BB00CB2035 /* LabelView.swift in Sources */,
 				1ECBBD942A57DF770021E8FB /* AppDelegate.swift in Sources */,
 				1ECBBD812A57DEFA0021E8FB /* DimensDefines.swift in Sources */,
+				1E1BB92C2A89CF8600481B40 /* TYTestController.swift in Sources */,
 				1ECBBD8B2A57DEFA0021E8FB /* TYHomeController.swift in Sources */,
+				1E1BB9342A89F73400481B40 /* WebViewCell.m in Sources */,
 				1ECBBD882A57DEFA0021E8FB /* TabBarViewController.swift in Sources */,
+				1E1BB9302A89F57F00481B40 /* TYTableWebController.swift in Sources */,
 				1ECBBD822A57DEFA0021E8FB /* UtilDefine.swift in Sources */,
+				1E1BB92A2A89CDB200481B40 /* BaseScrollView.swift in Sources */,
 				1ECBBD842A57DEFA0021E8FB /* TYNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,9 +743,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5MSQ8KT9X;
+				GCC_PREFIX_HEADER = "swift-project/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "swift-project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -682,6 +755,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,6 +764,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tianyaoqi.swift-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-project/swift-project-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -701,9 +777,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X5MSQ8KT9X;
+				GCC_PREFIX_HEADER = "swift-project/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "swift-project/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -711,6 +789,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -719,6 +798,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tianyaoqi.swift-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-project/swift-project-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
